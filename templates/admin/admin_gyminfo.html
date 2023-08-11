@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from demo.lorvent.com/fitness/admin_clubinfo.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 02:16:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Info</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]-->
+    <script src="{% static '../../cdn.jsdelivr.net/libs/html5shiv/3.7.0/html5shiv.js' %}"></script>
+    <script src="{% static '../../cdn.jsdelivr.net/libs/respond.js/1.3.0/respond.min.js' %}"></script>
+    <!--[endif]-->
+    <!-- global css -->
+    <link type="text/css" href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'css/custom_css/metisMenu.css' %}" rel="stylesheet" />
+
+    <link type="text/css" href="{% static 'css/custom_css/panel.css' %}" rel="stylesheet" />
+    <!-- end of global css -->
+    <!--page level css -->
+    <link type="text/css" href="{% static 'vendors/jasny-bootstrap/css/jasny-bootstrap.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'vendors/x-editable/css/bootstrap-editable.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'vendors/summernote/summernote.css' %}" rel="stylesheet" media="screen" />
+    <link type="text/css" href="{% static 'css/custom_css/fitness.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'css/custom_css/club_info.css' %}" rel="stylesheet" />
+    <!--end of page level css-->
+</head>
+
+<body>
+    <!--<div class="se-pre-con"></div> -->
+    <!-- header logo: style can be found in header-->
+    <header class="header">
+        <nav class="navbar navbar-static-top">
+            <a href="index-2.html" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+                <img src="{% static 'img/logo.png' %}" alt="image not found">
+            </a>
+            <!-- Header Navbar: style can be found in header-->
+            <!-- Sidebar toggle button-->
+            <!-- Sidebar toggle button-->
+            <div>
+                <a href="" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button"> <i class="fa fa-fw fa-navicon"></i>
+                </a>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <!-- User Account: style can be found in dropdown-->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle padding-user" data-toggle="dropdown">
+                            <img src="{% static 'img/admin.png' %}" width="35" class="img-circle img-responsive pull-left" height="35" alt="User Image">
+                            <div class="riot">
+                                <div>
+                                    Admin
+                                    <span>
+                                        <i class="caret"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="{% static 'img/admin.png' %}" class="img-circle" alt="User Image">
+                                <p>Admin</p>
+                            </li>
+                            <!-- Menu Body -->
+                            <li class="pad-3">
+                                <a href="#">
+                                     My Profile
+                                </a>
+                            </li>
+                            <li role="presentation"></li>
+                            <li>
+                                <a href="#">
+                                     Account Settings
+                                </a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#">
+                                         Lock
+                                    </a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="login">
+                         Logout
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="right-side right-padding">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h2>Gym Info</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index-2.html">
+                        <i class="fa fa-fw fa-home"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="admin_clubinfo.html" class="activated">Gym Info</a>
+                </li>
+            </ol>
+        </section>
+        <!--section ends-->
+        <div class="container-fluid">
+            <!--main content-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Basic charts strats here-->
+                    <div class="panel">
+                        <div class="panel-heading bg-primary">
+                            <h4 class="panel-title">
+                                <i class="fa fa-fw fa-user"></i> Gym Info
+                            </h4>
+                            <span class="pull-right">
+                                <i class="glyphicon glyphicon-chevron-up showhide clickable"></i>
+                                <i class="glyphicon glyphicon-remove removepanel"></i>
+                            </span>
+                        </div>
+                        <div class="panel-body">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <div class="terms">
+                                    <ul class="nav nav-tabs nav-custom " role="tablist">
+                                        <li role="presentation" class="active">
+                                            
+                                                
+                                            </a>
+                                        </li>
+                                       
+                                       
+                                    </ul>
+                                    <p><ul><li>Currently, emotions are running high, and panic is running rampant. COVID-19 is taking over the news with empty store shelves, layoffs and the current social and economic climate is just plain daunting. This all seems to be stressful where workout sessions can be a bit of relief.
+                                        Even though you’re plugged into the stream of thoughts, disconnect your mind from drama while being more mindful.</li><br>
+                                        <li>We want to make sure that absolutely everyone feels welcome. Whether this is your first time in a gym and you’re at the very start of your wellness journey or you’re looking to achieve a new personal best. 
+                                        Whatever your goal and whatever you want to achieve, we’re here to help you.</li><br>
+                                        <li> We offer no pressure monthly memberships starting from only Rs 2000 which you can stop and start whenever you want to because we’re contract free. So instead of being tied into a yearlong agreement and opening hours that don’t suit your lifestyle, we give you your gym, your way open 24/7. No strings attached.</li><br>
+                                        
+
+                                             <h4 align="center">J<b>oin us online.</b></h4>
+
+                                            <h4 align="center"><b>Step in today and workout.</b></h4>
+                                                
+                                               <h4 align="center"><b>It’s that easy!</b></h4>
+                             
+                                    
+                                     
+                                </div>
+                                <!-- Tab panes -->
+                              
+                               
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- col-md-6 -->
+            <!--row -->
+            <!--row ends-->
+        </div>
+        <!-- /.content -->
+    </aside>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+     {% include 'admin/sidebar.html' %}
+    </div>
+    <!-- /.right-side -->
+    <!-- ./wrapper -->
+    <!-- global js -->
+    <script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/custom_js/app.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/custom_js/metisMenu.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/holder/holder.js' %}" type="text/javascript"></script>
+    <!-- end of page level js -->
+    <!-- begining of page level js -->
+    <script src="{% static 'vendors/jasny-bootstrap/js/jasny-bootstrap.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/x-editable/jquery.mockjax.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/x-editable/bootstrap-editable.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/x-editable/js/html5types.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/summernote/summernote.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/jasny-bootstrap/js/inputmask.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/jasny-bootstrap/js/jquery.inputmask.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendors/x-editable/js/demo-mock.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/custom_js/club_info.js' %}" type="text/javascript"></script>
+    <!-- end of page level js -->
+</body>
+
+
+<!-- Mirrored from demo.lorvent.com/fitness/admin_clubinfo.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 02:17:08 GMT -->
+</html>

@@ -1,0 +1,26 @@
+ 
+ {% load static %}
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>forget password</title>
+   <link rel="stylesheet" type="text/css" href="{% static 'css/custom_css/forgetpass.css' %}">
+
+ </head>
+ <body>
+   <div class="forgetpassword">
+       <hl>Forget Password</h1>
+       <form action="#" method="post">
+         {% csrf_token %}
+    <input type="text" name="txt1" placeholder="Enter Registered E-mail ID"><br>
+   <button type="submit">Submit</button>
+</form>
+ </body>
+ </html>
+ {% if messages %}
+    {% for msg in messages %}       
+        <div class="alert alert-{{msg.level_tag}}" role="alert">
+        {{msg.message}}
+        </div>
+ {% endfor %}
+{% endif %}

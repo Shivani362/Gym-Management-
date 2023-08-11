@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(http://127.0.0.1:8000/static/img/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-his-upper-body-concept-healthy-lifestyle-sport-fitness-bodybuilding-wellbeing.jpg);
+    background-size :cover;
+    background-position: center;
+
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align:center;
+    color:white;
+}

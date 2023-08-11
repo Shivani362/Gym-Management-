@@ -1,0 +1,119 @@
+  {% load static %}
+  <!-- Left side column. contains the logo and sidebar -->
+   <aside class="left-side sidebar-offcanvas">
+    <!-- sidebar: style can be found in sidebar-->
+    <section class="sidebar">
+        <div id="menu" role="navigation">
+            <div class="nav_profile">
+                <div class="media profile-left">
+                    <a class="pull-left profile-thumb" href="#">
+                        <img src="{% static 'img/admin.png' %}" class="img-circle" alt="User Image">
+                    </a>
+                    <div class="content-profile">
+                        <h4 class="media-heading">Admin</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <ul class="navigation">
+                <li>
+                    <a href="index">
+                        <img src="{% static 'img/dashboard1.png' %}" width="30" class="img-circle img-responsive pull-left" height="30" alt="User Image">
+                        <span class="mm-text ">&nbsp;&nbsp;Dashboard</span>
+                    </a>
+                </li>
+        
+                    <a href="admin_gyminfo">
+                        <img src="{% static 'img/info2.png' %}" width="30" class="img-circle img-responsive pull-left" height="30" alt="User Image">
+                        <span class="mm-text">&nbsp;&nbsp;Gym Info</span>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+                <li>
+                    <li class="menu-dropdown">
+                        <a href="#">
+                   
+                            <img src="{% static 'img/subscription3.png' %}" width="30" class="img-circle img-responsive pull-left" height="30" alt="User Image">
+                        <span class="mm-text">&nbsp;&nbsp;Subscription</span>
+                       
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="packages">&nbsp;add subscription
+        
+                            </a>
+                </li>
+                <li>
+                    <a href="view_subscription">view subscriptions</a>
+                </li>
+                </ul>
+                    </li>
+                
+                <li class="menu-dropdown">
+                    <a href="#">
+                        <img src="{% static 'img/coach4.png' %}" width="30" class="img-circle img-responsive pull-left" height="30" alt="User Image">
+                            <span class="mm-text">&nbsp;&nbsp;Trainers</span>
+                     </a>
+                     <ul class="sub-menu">
+                        <li>
+                            <a href="add_trainers">add trainers</a>
+                         </li>
+                         <li>
+                             <a href="view_trainers">View trainers</a>
+                         </li>
+                         </ul>
+                    </li>
+                      
+                
+                    <li class="menu-dropdown">
+                     
+                         <a href="#">
+                            <img src="{% static 'img/team5.png' %}" width="30" class="img-circle img-responsive pull-left" height="30" alt="User Image">
+                              &nbsp;Members List
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                <a href="admin_userlist">View Memberlist</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                <li class="menu-dropdown">
+                    <a href="admin_userpayment"
+                        <li>
+                            <img src="{% static 'img/credit-card.png' %}" width="30" class="img-circle img-responsive pull-left" height="30" alt="User Image">
+                            <span class="mm-text">&nbsp;&nbsp;Payment</span>
+                        </a>
+                    </li>
+                </li>     
+                </li>
+                <li class="menu-dropdown">
+                    <a href="#">
+                        <img src="{% static 'img/gallery.png' %}" width="30" class="img-circle img-responsive pull-left" height="30" alt="User Image">
+                        <span class="mm-text">&nbsp;&nbsp;Gallery</span>
+                       
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="upload_gallery">
+                                Add Pictures 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery">
+                                 Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+               
+              
+            <!-- / .navigation -->
+            
+        
+        </div>
+        <!-- menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
